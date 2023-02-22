@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/front"
+    tools:context=".uploadActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lavender_boader"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="335dp"
+        android:layout_marginEnd="20dp"
+        android:padding="20dp">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:src="@drawable/ic_baseline_cloud_upload_24"
+    android:id="@+id/uploadimage"
+    android:layout_marginTop="2dp"
+    />
+   <ProgressBar
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/progressbar"
+       android:layout_gravity="center"
+       android:indeterminateTint="@color/Lavander"
+       android:visibility="invisible"
+       />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/uploadcaption"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.6"
+                android:background="@drawable/lavender_boader"
+                android:padding="10dp"
+                android:hint="Add a caption....."/>
+ 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/uploadbutton"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/Lavander"
+                android:src="@drawable/ic_baseline_send_24"
+                app:tint="@color/white"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+       
+</LinearLayout>
+
+</LinearLayout>
